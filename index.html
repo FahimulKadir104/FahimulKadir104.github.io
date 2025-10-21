@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    /* ✅ Material 3 Text Field Style */
+    .md3-textfield {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .md3-textfield input,
+    .md3-textfield textarea {
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      padding: 1.2rem 1rem 0.5rem 1rem;
+      background-color: #f5f5f5;
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .md3-textfield label {
+      position: absolute;
+      top: 1.1rem;
+      left: 1rem;
+      color: #777;
+      font-size: 1rem;
+      pointer-events: none;
+      transition: all 0.2s ease;
+    }
+
+    .md3-textfield input:focus,
+    .md3-textfield textarea:focus {
+      background-color: #fff;
+      box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+    }
+
+    .md3-textfield input:focus+label,
+    .md3-textfield input:not(:placeholder-shown)+label,
+    .md3-textfield textarea:focus+label,
+    .md3-textfield textarea:not(:placeholder-shown)+label {
+      top: 0.3rem;
+      left: 0.8rem;
+      font-size: 0.8rem;
+      color: #1e88e5;
+      background-color: white;
+      padding: 0 0.3rem;
+      border-radius: 5px;
+    }
+
+    .btn-md3 {
+      background-color: #1e88e5;
+      color: white;
+      border-radius: 5px;
+      padding: 0.7rem;
+      border: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-md3:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="nav-link" style="color: rgb(87, 87, 87); font-size:1.1rem;">Home</a>
+    <a href="#about" class="nav-link" style="color: rgb(87, 87, 87); font-size:1.1rem">About Me</a>
+    <a href="#education" class="nav-link" style="color: rgb(87, 87, 87); font-size:1.1rem">Education</a>
+    <a href="#skill" class="nav-link" style="color: rgb(87, 87, 87); font-size:1.1rem">Skill</a>
+    <a href="#projects" class="nav-link" style="color: rgb(87, 87, 87); font-size:1.1rem">Project</a>
+    <a href="#contact" class="nav-link" style="color: rgb(87, 87, 87); font-size:1.1rem">Contact</a>
+  </header>
+
+  <section id="introduction" class="d-flex flex-column gap-3 align-items-center mt-5 mb-5"
+    style="width: 100%; overflow: hidden;">
+    <h1 style="text-align: center; font-size: 3rem">Hi, I am <span style="color: rgb(3, 52, 73);">Fahimul
+        Kadir</span> </h1>
+    <h2 style="text-align: center; font-size: 2rem;" class="ms-2 me-2">Love solving problems with code from DSA to
+      embedded systems and web apps.</h2>
+    <h4 class="ms-2 me-2" style="text-align: center;font-size: 1.5rem; color:rgb(124, 186, 212)">Always learning,
+      building and occasionally designing interfaces.</h4>
+    <img src="./frontPart.png" id="hero_img">
+  </section>
+
+  <section id="education" class="ms-4 me-4 mt-5 mb-5">
+    <h1 class="display-5">Education</h1>
+    <div class="university edu mt-3">
+      <div class="part1 me-2">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+      <div class="part2">
+        <p class="h4">Bsc in CSE</p>
+        <p class="h6">(2018-2024)</p>
+        <p class="h1">Rajshahi University of Engineering and Technology</p>
+      </div>
+    </div>
+
+    <div class="college edu">
+      <div class="part1 me-2">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+      <div class="part2">
+        <p class="h4">Higher Secondary School Certificate</p>
+        <p class="h6">(2018-2024)</p>
+        <p class="h6">GPA-5 with General Scholarship</p>
+        <p class="h1">Adamjee Cantonment College, Dhaka</p>
+      </div>
+    </div>
+
+    <div class="college edu">
+      <div class="part1 me-2">
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+      <div class="part2">
+        <p class="h4">Secondary School Certificate</p>
+        <p class="h6">(2018-2024)</p>
+        <p class="h1">Shaheed Police Smrity College</p>
+      </div>
+    </div>
+  </section>
+
+  <hr style="width: 70%; margin:auto">
+
+  <section id="skill" class="ms-4 me-4 mt-5 mb-5">
+    <h1 class="skills-title mb-4">My Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/code.png" alt="Coding">
+        <h3>700+ Problems Solved</h3>
+        <p>On platforms like Codeforces and LeetCode.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/html-5.png" alt="HTML5">
+        <h3>HTML 5</h3>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/css3.png" alt="CSS3">
+        <h3>CSS 3</h3>
+        <p>Stylesheet language for responsive and clean UI.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/javascript--v1.png" alt="JavaScript">
+        <h3>JavaScript</h3>
+        <p>Dynamic scripting for interactivity and logic.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++">
+        <h3>C++</h3>
+        <h6>Powerful language used for problem solving and systems.</h6>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/arduino.png" alt="Arduino">
+        <h3>Embedded Systems</h3>
+        <p>Hands-on with Arduino & low-level hardware programming.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/react-native.png" alt="React">
+        <h3>React.js</h3>
+        <p>JavaScript framework for building UI components.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/color/96/bootstrap.png" alt="Bootstrap">
+        <h3>Bootstrap</h3>
+        <p>Front-end toolkit for responsive design.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/ios-filled/100/mysql-logo.png" alt="MySQL">
+        <h3>MySQL</h3>
+        <p>Relational database management system.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr style="width: 70%; margin:auto">
+
+  <!-- ✅ PROJECTS SECTION -->
+  <section id="projects" class="ms-4 me-4 mt-5 mb-5">
+    <h1 class="display-5 mb-4">Projects</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://img.icons8.com/fluency/240/online-store.png" class="card-img-top p-4" alt="Grocery Website">
+          <div class="card-body">
+            <h5 class="card-title">Grocery Management Website</h5>
+            <p class="card-text">Built with HTML, CSS, JavaScript, Node.js, and MySQL. Features product management and
+              user login.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://img.icons8.com/color/240/flutter.png" class="card-img-top p-4" alt="Tutor App">
+          <div class="card-body">
+            <h5 class="card-title">Tutor Finder App</h5>
+            <p class="card-text">A Flutter app using Node.js backend for connecting students with tutors based on skills
+              and location.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://img.icons8.com/color/240/arduino.png" class="card-img-top p-4" alt="Smart Irrigation">
+          <div class="card-body">
+            <h5 class="card-title">Smart Irrigation System</h5>
+            <p class="card-text">An Arduino-based embedded system that monitors soil moisture and automates water
+              control using sensors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr style="width: 70%; margin:auto">
+
+  <!-- ✅ CONTACT SECTION -->
+  <section id="contact" class="ms-4 me-4 mt-5 mb-5">
+    <h1 class="display-5 mb-4 text-center">Contact Me</h1>
+    <div class="card p-4 shadow-sm border-0" style="max-width: 600px; margin: auto;">
+      <form>
+        <div class="md3-textfield">
+          <input type="text" id="name" placeholder=" " required>
+          <label for="name">Your Name</label>
+        </div>
+        <div class="md3-textfield">
+          <input type="email" id="email" placeholder=" " required>
+          <label for="email">Email Address</label>
+        </div>
+        <div class="md3-textfield">
+          <textarea id="message" placeholder=" " rows="4" required></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn-md3 w-100 mt-2">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>

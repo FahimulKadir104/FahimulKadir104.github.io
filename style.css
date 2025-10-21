@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+* {
+  font-family: "Product Sans";
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background: #FFFFFF;
+  font-family: 'Product Sans', sans-serif;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.789);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#introduction {
+  padding-top: 50px;
+}
+
+#hero_img {
+  height: 25rem;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.088);
+  transition: box-shadow .3s;
+}
+
+.skill-card:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 35px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 2560px) {
+
+  section,
+  header {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  section,
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  section,
+  header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #introduction>#hero_img {
+    height: 20rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.edu {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  height: fit-content;
+}
+
+.part1 {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-items: center;
+  width: 30px;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgb(152, 152, 152);
+
+}
+
+.line {
+  width: .15rem;
+  height: calc(100% - 1rem);
+  background-color: rgb(96, 95, 95);
+}
+
+.part2 {
+  width: 100%;
+}
+
+.lang_img {
+  width: 5rem;
+}
